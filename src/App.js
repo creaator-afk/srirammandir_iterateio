@@ -1,17 +1,18 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './components/Home';
+import Home from './components/home/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from "./components/header/Header";
 
 const App = () => {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
