@@ -13,8 +13,8 @@ import {
     image_link_04,
     puja_1,
     puja_2,
-    puja_3
-} from './imageResources';
+    puja_3, aarti_article_image, ayurvedic_article_image, chaalisa_article_image, mantra_article_image
+} from '../../assets/imageResources';
 
 export const features = [
     {src: ic_puja_seva, description: "Book Pujas at Temples"},
@@ -53,6 +53,32 @@ export const pujas = [
         time: "25 July, Thursday, Shravana Krishna Panchami"
     },
 ];
+
+export const articles = [
+    {
+        src:aarti_article_image,
+        title: "Aarti",
+        description: "Aarti is a devotional song sung in praise of the deity. It is performed during the puja of the deity."
+    },
+
+    {
+        src:ayurvedic_article_image,
+        title: "Ayurveda",
+        description: "Ayurveda is a system of medicine with historical roots in the Indian subcontinent."
+    },
+
+    {
+        src:chaalisa_article_image,
+        title: "Chaalisa",
+        description: "A Chaalisa is a forty-verse prayer dedicated to the deity."
+    },
+
+    {
+        src:mantra_article_image,
+        title: "Mantra",
+        description: "A mantra is a sacred utterance, a numinous sound, a syllable, word or phonemes, or group of words in Sanskrit believed by practitioners to have religious, magical or spiritual powers"
+    },
+]
 
 export const outlets = [
     {src: image_link_01},
