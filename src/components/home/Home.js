@@ -13,6 +13,9 @@ import Puja from "./Puja";
 import Panchang from "./Panchang";
 import Reviews from "./Reviews";
 import AppFeatures from "./AppFeatures";
+import AppFeatureItem from "./AppFeatureItem";
+import ReviewItem from "./ReviewItem";
+import PanchangItem from "./PanchangItem";
 
 Features.propTypes = {prop: PropTypes.func};
 Outlet.propTypes = {callbackfn: PropTypes.func};
@@ -28,10 +31,10 @@ const Home = () => (<div className="container home-container">
                                                           description={feature.description}/>)}/>
         <Outlet callbackfn={(outlet, index) => (<OutletItem key={index} src={outlet.src}/>)}/>
         <Puja callbackfn={(puja, index) => (<PujaItem key={index} {...puja} />)}/>
-        <Panchang callbackfn={(puja, index) => (<PujaItem key={index} {...puja} />)}/>
+        <Panchang callbackfn={(puja, index) => (<PanchangItem key={index} {...puja} />)}/>
         <Banner/>
-        <Reviews callbackfn={(puja, index) => (<PujaItem key={index} {...puja} />)}/>
-        <AppFeatures callbackfn={(puja, index) => (<PujaItem key={index} {...puja} />)}/>
+        <Reviews callbackfn={(review, index) => (<ReviewItem key={index} {...review} />)}/>
+        <AppFeatures callbackfn={(app, index) => (<AppFeatureItem key={index} {...app} />)}/>
         <Articles callbackfn={(articles, index) => (<ArticleItem key={index} {...articles} />)}/>
     </div>);
 

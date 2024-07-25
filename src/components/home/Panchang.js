@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { pujas } from './data';
-import PujaItem from './PujaItem';
+import { panchnag } from './data';
 
 const Panchang = ({ callbackfn }) => (
     <div className="row new-section">
         <h3 className="col-12 text-center">Complete Panchang</h3>
         <p className="feature-description">Sri Mandir Panchang offers you all the important information about Tithi, Auspicious-Inauspicious timings, and upcoming fasts and festivals.</p>
-        <button className="btn btn-primary">View detailed Panchang</button>
-        {pujas.map(callbackfn)}
+        <button className="btn btn-light">View detailed Panchang</button>
+        {panchnag.map(callbackfn)}
     </div>
 );
 

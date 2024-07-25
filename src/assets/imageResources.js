@@ -25,9 +25,40 @@ import aarti_article_image from './img/aarti_article_image.jpeg';
 import ayurvedic_article_image from './img/ayurvedic_article_image.jpeg';
 import chaalisa_article_image from './img/chaalisa_article_image.jpeg';
 import mantra_article_image from './img/mantra_article_image.jpeg';
+import ic_feature_01 from './img/ic_feature_01.svg';
+import ic_feature_02 from './img/ic_feature_02.svg';
+import ic_feature_03 from './img/ic_feature_03.svg';
+import ic_feature_04 from './img/ic_feature_04.svg';
+import ic_feature_05 from './img/ic_feature_05.svg';
+import ic_feature_06 from './img/ic_feature_06.svg';
+import image1 from './img/image1.png';
+import image2 from './img/image2.jpeg';
+import image3 from './img/image3.png';
+import image4 from './img/image4.png';
+import image5 from './img/image5.png';
+import ic_panchnag_01 from './img/ic_panchnag_01.svg';
+import ic_panchnag_02 from './img/ic_panchnag_02.svg';
+import ic_panchnag_03 from './img/ic_panchnag_03.svg';
+import ic_panchnag_04 from './img/ic_panchnag_04.svg';
+
 
 
 export {
+    ic_panchnag_01,
+    ic_panchnag_02,
+    ic_panchnag_03,
+    ic_panchnag_04,
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    ic_feature_01,
+    ic_feature_02,
+    ic_feature_03,
+    ic_feature_04,
+    ic_feature_05,
+    ic_feature_06,
     aarti_article_image,
     ayurvedic_article_image,
     chaalisa_article_image,
