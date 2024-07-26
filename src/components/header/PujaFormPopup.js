@@ -23,7 +23,7 @@ const PujaFormPopup = ({onClose}) => {
                         <input id="details" className="form-control"></input>
                     </div>
                     <Link to="/puja/cart">
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <button type="submit" onClick={onClose} className="btn btn-primary">Submit</button>
                     </Link>
                     <button type="button" className="btn btn-secondary" onClick={onClose}>Close</button>
                 </form>

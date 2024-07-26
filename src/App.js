@@ -11,8 +11,20 @@ import History from "./components/puja/History";
 import Booking from "./components/puja/Booking";
 import Cart from "./components/puja/Cart";
 import Details from "./components/puja/Details";
-
+import axios from "axios";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:3000';
 const App = () => {
+  const checkBackendConnection = async () => {
+    try {
+      const response = await axios.get(`${BACKEND_URL}/check`);
+      console.log('Backend response:', response.data);
+    } catch (error) {
+      console.error('Error connecting to backend:', error);
+    }
+  };
+
+  checkBackendConnection().then(r => console.log('Backend connection checked!'));
+
   return (
     <Router>
       <div className="App">

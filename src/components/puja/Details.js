@@ -1,14 +1,17 @@
 import React, {useState} from 'react';
-import {FaArrowLeft, FaArrowRightToBracket} from "react-icons/fa6";
-import {Link} from "react-router-dom";
+import {FaArrowLeft} from "react-icons/fa6";
+import {useLocation} from "react-router-dom";
 import {FaAngleDoubleRight, FaCheckCircle} from "react-icons/fa";
 import PaymentFormPopup from "./PaymentFormPopup";
+import PaymentFormWrapper from "./PaymentForm";
 
 const Details = (props) => {
     const [isPaymentFormVisible, setPaymentFormVisible] = useState(false);
     const handlePaymentFormToggle = () => {
         setPaymentFormVisible(!isPaymentFormVisible);
     };
+    const location = useLocation();
+    const {isPaymentIntentFormVisible} = location.state || false;
     return(
     <div className="container-fluid">
         <div className="d-flex align-items-center justify-content-between pt-2 pb-2 bg-light px-4">
@@ -48,8 +51,16 @@ const Details = (props) => {
                 </div>
                 <button onClick={handlePaymentFormToggle} className="btn btn-primary w-100 mt-4 mb-4">Proceed to book</button>
             </div>
+        {
+            isPaymentFormVisible ?
+                (<PaymentFormPopup onClose={handlePaymentFormToggle} />)
+                :
+                (isPaymentIntentFormVisible &&
+                    <PaymentFormWrapper onClose={handlePaymentFormToggle} />)
+        }
         </div>
-        {isPaymentFormVisible && <PaymentFormPopup onClose={handlePaymentFormToggle} />}
+
+
     </div>
 )};
 

@@ -23,7 +23,7 @@ const Booking = (props) => {
                 <h3>For Blessing to Overcome Delays and Adversities in Life</h3>
                 <p className="mx-auto w-50">Book your Puja online at Popular Temples of India. Panditji will take
                     sankalp with your name and gotra during the Puja</p>
-                <button className="btn btn-primary">Book Puja</button>
+                <button onClick={handlePujaFormToggle} className="btn btn-primary">Book Puja</button>
             </div>
             <div className="container-lg">
                 <h2>Select puja Package</h2>
@@ -44,7 +44,7 @@ const Booking = (props) => {
                                     </li>
                                     <li>Sacred tirth prasad will be sent to your address within 8-10 days.</li>
                                 </ul>
-                                <button className="btn btn-primary">Book Puja</button>
+                                <button onClick={handlePujaFormToggle} className="btn btn-primary">Book Puja</button>
 
                             </div>
                         </div>

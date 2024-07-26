@@ -17,7 +17,7 @@ const Puja = () => {
                             <p className="card-text">Ganesh Chaturthi is celebrated as the birthday of Lord Ganesha. It
                                 is a festival of joy and happiness. Book your puja online with Sri Mandir and get the
                                 blessings of Lord Ganesha.</p>
-                            <a href="#" className="btn btn-primary">Book Puja</a>
+                            <Link to="/puja/booking" className="btn btn-primary">Book Puja</Link>
                         </div>
                     </div>
                     <div className="card col-4">
@@ -29,7 +29,7 @@ const Puja = () => {
                                 festival of joy and happiness. Book your puja online with Sri Mandir and get the
                                 blessings
                                 of Lord Ganesha.</p>
-                            <a href="#" className="btn btn-primary">Book Puja</a>
+                            <Link to="/puja/booking" className="btn btn-primary">Book Puja</Link>
                         </div>
                     </div>
                     <div className="card col-4">
