@@ -65,3 +65,14 @@
 .puja-location p, .puja-time p {
   margin-left: 5px;
 }
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}

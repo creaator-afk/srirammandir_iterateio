@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { pujas } from './data';
-import PujaItem from './PujaItem';
 
-const Puja = ({ callbackfn }) => (
+const PujaSection = ({ callbackfn }) => (
     <div className="row new-section">
         <h3 className="col-12 text-center">Puja Seva for you and your loved ones</h3>
         <p className="feature-description">Book Pujas in your and your family's name at 1000+ renowned temples in India. You will also receive a video of the Puja and Prasad along with divine blessings.</p>
@@ -12,6 +11,6 @@ const Puja = ({ callbackfn }) => (
     </div>
 );
 
-Puja.propTypes = { callbackfn: PropTypes.func };
+PujaSection.propTypes = { callbackfn: PropTypes.func };
 
-export default Puja;
+export default PujaSection;

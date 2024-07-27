@@ -2,7 +2,7 @@
 
 Sri Mandir is a web application that allows people to book pujas and give offerings to God. It provides a seamless experience for devotees to fulfill their spiritual needs from the comfort of their homes.
 
-## Features
+## FeaturesSection
 
 - **Book Pujas**: Book various types of pujas at renowned temples across India.
 - **Offer Chadhava**: Make offerings at temples.
@@ -11,7 +11,7 @@ Sri Mandir is a web application that allows people to book pujas and give offeri
 - **Divine Music**: Listen to devotional music.
 - **Mandir Darshan**: Virtual tours of temples.
 - **Hindu Literature**: Access a vast collection of Hindu literature.
-- **Panchang**: Get detailed information about Tithi, Auspicious-Inauspicious timings, and upcoming fasts and festivals.
+- **PanchangSection**: Get detailed information about Tithi, Auspicious-Inauspicious timings, and upcoming fasts and festivals.
 
 ## Installation
 

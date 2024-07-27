@@ -40,10 +40,12 @@ import ic_panchnag_01 from './img/ic_panchnag_01.svg';
 import ic_panchnag_02 from './img/ic_panchnag_02.svg';
 import ic_panchnag_03 from './img/ic_panchnag_03.svg';
 import ic_panchnag_04 from './img/ic_panchnag_04.svg';
+import sirmandir_footer_en_logo from './img/sirmandir_footer_en_logo.svg';
 
 
 
 export {
+    sirmandir_footer_en_logo,
     ic_panchnag_01,
     ic_panchnag_02,
     ic_panchnag_03,

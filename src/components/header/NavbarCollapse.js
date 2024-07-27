@@ -14,16 +14,16 @@ const NavbarCollapse = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                    <Link className="nav-link active" aria-current="page" to="#">Home</Link>
+                    <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="#">Puja</Link>
+                    <Link className="nav-link" to="/puja">Puja</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="#">Panchang</Link>
+                    <Link className="nav-link" to="/panchang">Panchang</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="#">Temples</Link>
+                    <Link className="nav-link" to="/temples">Temples</Link>
                 </li>
                 <li className="nav-item dropdown">
                     <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button"
@@ -42,9 +42,6 @@ const NavbarCollapse = () => {
                         <li><Link className="dropdown-item" to="#">Shrimad Bhagwat - Interesting Stories</Link></li>
                         <li><Link className="dropdown-item" to="#">Ayurvedic and Home Remedies</Link></li>
                     </ul>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link disabled" to="#">Disabled</Link>
                 </li>
             </ul>
             <ul className="navbar-nav me-0 mb-2 mb-lg-0 ">

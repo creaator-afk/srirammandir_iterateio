@@ -5,37 +5,37 @@ import OutletItem from './OutletItem';
 import PujaItem from './PujaItem';
 import Banner from "./Banner";
 import * as PropTypes from "prop-types";
-import ArticleItem, {Articles} from "./ArticleItem";
+import ArticleItem, {ArticlesSection} from "./ArticleItem";
 import HeroSection from "./HeroSection";
-import Features from "./Features";
-import Outlet from "./Outlet";
-import Puja from "./Puja";
-import Panchang from "./Panchang";
-import Reviews from "./Reviews";
-import AppFeatures from "./AppFeatures";
+import FeaturesSection from "./FeaturesSection";
+import OutletSection from "./OutletSection";
+import PujaSection from "./PujaSection";
+import PanchangSection from "./PanchangSection";
+import ReviewsSection from "./ReviewsSection";
+import AppFeaturesSection from "./AppFeaturesSection";
 import AppFeatureItem from "./AppFeatureItem";
 import ReviewItem from "./ReviewItem";
 import PanchangItem from "./PanchangItem";
 
-Features.propTypes = {prop: PropTypes.func};
-Outlet.propTypes = {callbackfn: PropTypes.func};
-Puja.propTypes = {callbackfn: PropTypes.func};
-Panchang.propTypes = {callbackfn: PropTypes.func};
-Reviews.propTypes = {callbackfn: PropTypes.func};
-AppFeatures.propTypes = {callbackfn: PropTypes.func};
-Articles.propTypes = {callbackfn: PropTypes.func};
+FeaturesSection.propTypes = {prop: PropTypes.func};
+OutletSection.propTypes = {callbackfn: PropTypes.func};
+PujaSection.propTypes = {callbackfn: PropTypes.func};
+PanchangSection.propTypes = {callbackfn: PropTypes.func};
+ReviewsSection.propTypes = {callbackfn: PropTypes.func};
+AppFeaturesSection.propTypes = {callbackfn: PropTypes.func};
+ArticlesSection.propTypes = {callbackfn: PropTypes.func};
 
 const Home = () => (<div className="container home-container">
         <HeroSection/>
-        <Features prop={(feature, index) => (<FeatureItem key={index} src={feature.src}
-                                                          description={feature.description}/>)}/>
-        <Outlet callbackfn={(outlet, index) => (<OutletItem key={index} src={outlet.src}/>)}/>
-        <Puja callbackfn={(puja, index) => (<PujaItem key={index} {...puja} />)}/>
-        <Panchang callbackfn={(puja, index) => (<PanchangItem key={index} {...puja} />)}/>
+        <FeaturesSection prop={(feature, index) => (<FeatureItem key={index} src={feature.src}
+                                                                 description={feature.description}/>)}/>
+        <OutletSection callbackfn={(outlet, index) => (<OutletItem key={index} src={outlet.src}/>)}/>
+        <PujaSection callbackfn={(puja, index) => (<PujaItem key={index} {...puja} />)}/>
+        <PanchangSection callbackfn={(puja, index) => (<PanchangItem key={index} {...puja} />)}/>
         <Banner/>
-        <Reviews callbackfn={(review, index) => (<ReviewItem key={index} {...review} />)}/>
-        <AppFeatures callbackfn={(app, index) => (<AppFeatureItem key={index} {...app} />)}/>
-        <Articles callbackfn={(articles, index) => (<ArticleItem key={index} {...articles} />)}/>
+        <ReviewsSection callbackfn={(review, index) => (<ReviewItem key={index} {...review} />)}/>
+        <AppFeaturesSection callbackfn={(app, index) => (<AppFeatureItem key={index} {...app} />)}/>
+        <ArticlesSection callbackfn={(articles, index) => (<ArticleItem key={index} {...articles} />)}/>
     </div>);
 
 export default Home;

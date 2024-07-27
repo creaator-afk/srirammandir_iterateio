@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { panchnag } from './data';
 
-const Panchang = ({ callbackfn }) => (
+const PanchangSection = ({ callbackfn }) => (
     <div className="row new-section">
         <h3 className="col-12 text-center">Complete Panchang</h3>
         <p className="feature-description">Sri Mandir Panchang offers you all the important information about Tithi, Auspicious-Inauspicious timings, and upcoming fasts and festivals.</p>
@@ -11,6 +11,6 @@ const Panchang = ({ callbackfn }) => (
     </div>
 );
 
-Panchang.propTypes = { callbackfn: PropTypes.func };
+PanchangSection.propTypes = { callbackfn: PropTypes.func };
 
-export default Panchang;
+export default PanchangSection;
